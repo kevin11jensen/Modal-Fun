@@ -2,7 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Card } from './Card';
 //import images here
-// import img1 from './images';
+// import img1 from './images/img1';
+// import img2 from './images/img2';
+// import img3 from './images/img3';
+// import img4 from './images/img4';
+// import img5 from './images/img5';
+// import img6 from './images/img6';
+// import img7 from './images/img7';
+// import img8 from './images/img8';
 
 
 
