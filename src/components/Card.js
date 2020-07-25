@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Modal } from './Modal';
+
+
+
 
 
 export function Card(props) {
     console.log(props)
+    const [modal, setModal] = useState(false);
+    const toggleModal = e => {
+        setModal(!modal);
+    }
     return (
         <CardWrapper>
             <img src = {props.cardImgSrc} alt = {props.cardImgAlt} />
             <h3>{props.cardTitle}</h3>
             <p>{props.cardText}</p>
-            <button>open</button>
+            <button onClick = {toggleModal} className = {props.btn}>open</button>
+            {modal ? (
+            <Modal />
+            ) : null
+            }
         </CardWrapper>
     );
 }
