@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export function Card() {
+export function Card(props) {
+    console.log(props)
     return (
         <CardWrapper>
-            <img src = {''} alt = 'card image' />
-            <h3>Card Title</h3>
-            <p>Card text</p>
+            <img src = {props.cardImgSrc} alt = {props.cardImgAlt} />
+            <h3>{props.cardTitle}</h3>
+            <p>{props.cardText}</p>
             <button>open</button>
         </CardWrapper>
     );
