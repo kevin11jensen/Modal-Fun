@@ -19,9 +19,9 @@ export function Card(props) {
             <p>{props.cardText}</p>
             <button onClick = {toggleModal} className = {props.btn}>open</button>
             {modal ? (
-            <Modal />
-            ) : null
-            }
+                <Modal className = 'modal1' text = 'hello from modal 1'/>
+                ) : null
+                }
         </CardWrapper>
     );
 }

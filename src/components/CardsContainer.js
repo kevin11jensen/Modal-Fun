@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Card } from './Card';
+import { Modal } from './Modal';
 //import images here
 // import img1 from './images/img1';
 // import img2 from './images/img2';
@@ -13,7 +14,8 @@ import { Card } from './Card';
 
 
 
-export function CardsContainer() {
+export function CardsContainer(props) {
+    
     return (
         <CardsWrapper>
             <Card 
@@ -22,7 +24,11 @@ export function CardsContainer() {
             cardImgSrc = {'Card Img 1'}
             cardImgAlt = {'Card Img 1'}
             btn = 'open-btn1'
-            />
+            
+            >
+            
+            </Card>
+            
             
             <Card 
             cardTitle = 'Card #2'
